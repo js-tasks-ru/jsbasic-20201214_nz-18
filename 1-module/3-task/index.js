@@ -9,4 +9,3 @@ function ucFirst(str) {
   
   return result[0].toUpperCase().concat(result.slice(1));
 }
-
