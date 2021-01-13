@@ -8,4 +8,5 @@ function ucFirst(str) {
   if (result.length === 0) {return result;} 
   
   return result[0].toUpperCase().concat(result.slice(1));
+  
 }
