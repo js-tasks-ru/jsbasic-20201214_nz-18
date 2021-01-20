@@ -4,6 +4,8 @@
  * @param {number} maxlength
  * @returns {string}
  */
-function truncate(str, maxlength) {
-  // ваш код...
-}
+const truncate = (str, maxlength) => 
+  str.length < maxlength ? str : 
+    str.substr(0, maxlength - 1).concat("…");
+
+
