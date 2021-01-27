@@ -3,8 +3,9 @@
  * @param {Object} obj
  * @returns {Boolean}
  */
-let result;
+
 function isEmpty(obj) {
+  let result;
   result = Object.keys(obj).length === 0;
   return result;}
 
