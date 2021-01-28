@@ -2,8 +2,7 @@
  * @param   {{ name: string, age: number }[]} users
  * @returns {string[]}  объект
  */
-function namify(users) {
-  let nameArray = users.map(item => item.name);
+function namify(users) { 
   
-  return nameArray;
+  return users.map(item => item.name); 
 }
