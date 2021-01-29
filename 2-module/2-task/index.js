@@ -3,6 +3,9 @@
  * @param {Object} obj
  * @returns {Boolean}
  */
+
 function isEmpty(obj) {
-  // ваш код...
-}
+  let result;
+  result = Object.keys(obj).length === 0;
+  return result;}
+
