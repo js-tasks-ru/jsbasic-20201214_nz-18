@@ -5,9 +5,12 @@
  */
 
 const getMinMax = (str) => {
-  const numbers = str.split(' ').filter(item => parseFloat(item)).map(item => parseFloat(item.replace(/,/g, '')));
+  const numbers = Array.from(str.match(/-?\d+\.?\d*/g), (item) =>
+    parseFloat(item.replace(/,$/, "").replace(/,/, "."))
+  );
+
   return {
     min: Math.min(...numbers),
-    max:Math.max(...numbers)
-  }
+    max: Math.max(...numbers)
+  };
 };
