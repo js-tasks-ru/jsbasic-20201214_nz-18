@@ -6,7 +6,7 @@
 
 const getMinMax = (str) => {
   const numbers = Array.from(str.match(/-?\d+\.?\d*/g), (item) =>
-    parseFloat(item.replace(/,$/, "").replace(/,/, "."))
+    parseFloat(item.replace(/,$/, ""))
   );
 
   return {
